@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <title>Frontend Mentor | Clock App</title>
+</head>
+<body>
+  <div id="main-section-container">    
+    <div id="quote-wrap">  
+      <figure id="quote-figure">
+        <blockquote>
+          <p id="quote"><!-- JS --></p>         
+        </blockquote>
+        <figcaption id="author"><!-- JS --></figcaption>
+      </figure>
+      <button id="quote-btn"></button>
+    </div>
+    <div class="separator"></div>
+    <div id="time-grid">
+      <div>
+        <p id="greeting"><!-- JS --></p>
+        <div id="time-wrap">
+          <p id="time"><!-- JS --></p>
+          <p id="timezone-code"><!-- JS --></p>
+        </div>
+        <p id="location"><!-- JS --></p>        
+      </div> 
+      <div id="more-btn-wrap">
+        <label id="more-btn-label" for="more-btn">more</label>
+        <input id="more-btn" type="checkbox"> 
+      </div>
+    </div>
+  </div>
+
+  <div id="more-section-container" style="display:none">
+    <div class="info-wrap">
+      <p>Current Timezone</p>
+      <p  id="timezone" class="info"><!-- JS --></p>
+    </div>
+    <div class="info-wrap border">
+      <p>Day of the year</p>
+      <p id="day-of-year" class="info"><!-- JS --></p>
+    </div>
+    <div class="info-wrap">
+      <p>Day of the week</p>
+      <p id="day-of-week" class="info"><!-- JS --></p>
+    </div>
+    <div class="info-wrap border">
+      <p>Week number</p>
+      <p id="week-number" class="info"><!-- JS --></p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>
