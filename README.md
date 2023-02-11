@@ -26,9 +26,11 @@ Users should be able to:
 - Be shown the correct greeting and background image based on the time of day they're visiting the site
 - Generate random programming quotes by clicking the refresh icon near the quote
 
-### Screenshot
+### Screenshots
 
-![Screenshot](./screenshot.jpg)
+![Screenshot](./screenshot-1.jpg)
+![Screenshot](./screenshot-2.jpg)
+
 
 ### Links
 
