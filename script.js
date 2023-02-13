@@ -60,7 +60,7 @@ async function renderAPIData() {
 
      
     //  Getting time/date infos
-    url = 'http://worldtimeapi.org/api/ip';
+    url = 'https://worldtimeapi.org/api/ip';
     const timeData = await getData(url).catch(err => console.log(`Fetching World Time API not working. Error: ${err.message}`));
     const timeZone = timeData.timezone;
     const dayOfYear = timeData.day_of_year;
@@ -107,7 +107,7 @@ function renderGreeting(time) {
         case (time.hrs >= '17'):
             greeting = 'evening';
             break;
-        case (time.hrs >= '20'):
+        case (time.hrs >= '20' || time.hrs <= '04'):
             greeting = 'night';
             break;   
     };
@@ -124,7 +124,7 @@ function renderNightTheme(time) {
     const bodyEl = document.querySelector('body');
     const moreSectionContainerEl = document.getElementById('more-section-container');
     const greetingEl = document.getElementById('greeting');
-    if(time.hrs <= '07' || time.hrs >= '20' ) {
+    if(time.hrs <= '06' || time.hrs >= '20' ) {
         bodyEl.style.backgroundImage = 'var(--mainBG-night)';
         moreSectionContainerEl.style.color = 'white';
         moreSectionContainerEl.style.backgroundColor = '#000000bf';
